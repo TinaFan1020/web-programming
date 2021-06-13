@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CCU 公共事務研習社</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif;
+      background-color: #f1f1f1;
+      padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* 每列之間有間格 */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 建立一排四個格子 */
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #ddd;
+}
+/* 當寬度小於900px，變成兩格兩格相鄰 */
+@media screen and (max-width: 900px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .column {width: 50%;}
+}
+/* 寬度小於600px 使兩列互相堆疊，而非相鄰 */
+@media screen and (max-height: 600px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .column {width: 100%;}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#00B0F0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover { /*靠近之後的顏色*/
+  background-color: #FF2626;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="../index.html"><i class="fa fa-fw fa-home fa-1x"></i> 首頁</a>
+  <br>
+  <a href="#services"><i class="fa fa-comment"></i> 公共議題</a>
+  <br>
+  <a href="#clients"><i class="fa fa-users fa-1x"></i> 人脈清單</a>
+  <br>
+  <a href="#activity"><i class="fa fa-calendar"></i> 歷年活動</a>
+  <br>
+  <a href="#Student_autonomy"><i class="fa fa-university"></i> 學生自治</a>
+  <br>
+  <a href="#contact"><i class="fa fa-fw fa-envelope fa-1x"></i> Contact</a>
+</div>
+
+<!-- main -->
+<div class="main">
+  <h1>CCU公共事務研習社</h1>
+  <hr>
+  
+  <h2>歷年活動</h2>
+  <p>活動介紹..........</p>
+  
+  <!-- 活動圖片區域 -->
+  <div class="row">
+
+    <div class="column">
+      <div class="content">
+        <img src="https://i.imgur.com/n4zJBpz.jpg" alt="一隻小貓" title="超級可愛的貓咪" style="width:100%">
+        <h3>活動一</h3>
+        <p>活動簡述.....</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/QiQEh4u.jpg" alt="睡覺小貓" title="超級可愛的貓咪" style="width:100%">
+        <h3>活動二</h3>
+        <p>活動簡述.....</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/43mE2UU.jpgg" alt="美國短毛貓" style="width:100%">
+        <h3>活動三</h3>
+        <p>活動簡述.....</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="https://i.imgur.com/OcQ2bmT.jpg" alt="躺躺小貓" style="width:100%">
+        <h3>活動四</h3>
+        <p>活動簡述......</p>
+      </div>
+    </div>
+  <!-- 活動圖片區結束 -->
+
+  </div>
+
+  <div class="content">
+    <img src="https://i.imgur.com/PKRxqFW.jpg" alt="Cat" style="width:100%">
+    <h3>可愛小貓咪</h3>
+    <p>喵喵.....</p>
+    <p>喵喵喵.....</p>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <br>
+  <div class="footer">
+    <h2>社團及網站資訊....</h2>
+  </div>
+</div>
+  <!-- END MAIN -->
+
+<script>
+  //宣告按鈕
+  var mybutton = document.getElementById("myBtn");
+  
+  // 當往下滑20px之後，顯示按鈕
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+   /*點選後回到畫面最上方*/
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+     
+</body>
+</html> 
