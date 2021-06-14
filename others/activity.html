@@ -79,13 +79,13 @@ body {font-family: "Lato", sans-serif;
 /* 當寬度小於900px，變成兩格兩格相鄰 */
 @media screen and (max-width: 900px) {
   .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar a {float: none;width: 100%;}
   .column {width: 100%;}
 }
 /* 寬度小於600px 使兩列互相堆疊，而非相鄰 */
 @media screen and (max-height: 600px) {
   .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar a {float: none;width: 100%;}
   .column {width: 100%;}
 }
 
