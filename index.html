@@ -16,6 +16,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+<link rel="icon" href="logo.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+
 <style>
 * {
   box-sizing: border-box;
@@ -26,12 +29,15 @@ body {
   margin: 0;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 80px;
+
+/* 邊邊的社團介紹用 */
+.fakeimg {
+  background-color: #00B0F0;
+  width: 100%;
+  padding: 20px;
   text-align: center;
-  background: #00B0F0;
-  color: white;
+  color:white;
+  font-size:20px;
 }
 
 /* header的h1字體大小增加 */
@@ -94,15 +100,7 @@ body {
   padding: 20px;
 }
 
-/* 裝飾用 */
-.fakeimg {
-  background-color: #00B0F0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  color:white;
-  font-size:20px;
-}
+
 /*---時事用-----*/
 
 .row1 {
@@ -187,7 +185,7 @@ body {
 <!--回到頂端按鈕end-->
 
 <!--封面圖片卷軸-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color:#c9c5c5">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -223,11 +221,12 @@ body {
 
 <!--橫向列表-->
 <div class="navbar1">
-  <a href="#"><i class="fa fa-comment"></i> 公共議題</a>
-  <a href="#"><i class="fa fa-users fa-1x"></i> 人脈清單</a>
+  <a href="index.html"><i class="fa fa-fw fa-home fa-1x"></i> 首頁</a>
+  <a href="others/public_issue.html"><i class="fa fa-comment"></i> 公共議題</a>
+  <a href="https://reurl.cc/5rvXp7"><i class="fa fa-users fa-1x"></i> 人脈清單</a>
   <a href="others/activity.html"><i class="fa fa-calendar"></i> 歷年活動</a>
-  <a href="#Student_autonomy"><i class="fa fa-university"></i> 學生自治</a>
-  <a href="#Contact" class="right"><i class="fa fa-fw fa-envelope fa-1x"></i> 聯絡我們</a>
+  <a href="others/Student_autonomy.html"><i class="fa fa-university"></i> 學生自治</a>
+  <a href="#footer" class="right"><i class="fa fa-fw fa-envelope fa-1x"></i> 聯絡我們</a>
 </div>
 <!--橫向列表end-->
 
@@ -307,8 +306,13 @@ body {
   </div>
 </div>
 <br>
-<div class="footer">
-  <h2>塞得下的Footer</h2>
+<div class="footer" id="footer">
+  <h2>聯絡我們</h2>
+  <a href="https://www.facebook.com/CCUPublicAffairsClub"><img src="https://i.imgur.com/kbV5JLa.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="mailto:ccupa2020@gmail.com"><img src="https://i.imgur.com/M8ReKSU.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <a href="https://www.youtube.com/channel/UCpxbVoYa1C4POfOIr1_qgOQ"><img src="https://i.imgur.com/jZQLGGR.png" style="width:40px;height:40px;margin:10px 15px"></a>
+  <h3><a href="https://ppt.cc/f8pXIx">入社表單點這裡</a></h3>
+  <h4>網站設計及撰寫 范瑄育</h4>
 </div>
 
 <script>
